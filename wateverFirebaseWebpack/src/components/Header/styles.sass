@@ -1,0 +1,29 @@
+.App-header
+  margin-bottom: 15px
+
+.App-nav
+  margin-bottom: 15px
+  align-items: center
+  height: auto
+  .nav-item
+    font-size: 1.5rem
+    position: relative
+    text-transform: uppercase
+    &:before
+      content: ""
+      visibility: hidden
+      position: absolute
+      width: 100%
+      height: 2px
+      bottom: 0
+      left: 0
+      background-color: $info
+      transform: scaleX(0)
+      -webkit-transition: all .3s ease-in-out 0s
+      transition: all .3s ease-in-out 0s
+    &.is-active
+      color: $info
+      &:before
+        visibility: visible
+        -webkit-transform: scaleX(1)
+        transform: scaleX(1)

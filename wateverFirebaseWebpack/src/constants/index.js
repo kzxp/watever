@@ -1,0 +1,7 @@
+export const UI_LOADING = 'UI_LOADING'
+export const UI_LOADED = 'UI_LOADED'
+
+export const FETCHING_PAGE_DATA = 'FETCHING_PAGE_DATA'
+export const FETCHED_PAGE_DATA = 'FETCHED_PAGE_DATA'
+export const LOAD_MORE_DEV = 'LOAD_MORE_DEV'
+export const CHANGE_PAGE = 'CHANGE_PAGE'
