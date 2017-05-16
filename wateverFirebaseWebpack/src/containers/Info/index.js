@@ -4,7 +4,11 @@ import InfoColumns from 'components/InfoColumns'
 import { connect } from 'react-redux';
 import { getDataStateByKey } from 'selectors';
 
-class Info extends React.Component {
+class Info extends React.PureComponent {
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
 
   render() {
 

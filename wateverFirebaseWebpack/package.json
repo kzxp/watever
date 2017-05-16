@@ -55,6 +55,7 @@
     "bulma": "^0.4.1",
     "classnames": "^2.2.5",
     "firebase": "^3.6.8",
+    "firebase-tools": "^3.7.0",
     "lodash": "^4.17.4",
     "react": "^15.4.2",
     "react-css-modules": "^4.2.1",

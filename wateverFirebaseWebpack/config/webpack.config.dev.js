@@ -85,7 +85,8 @@ module.exports = {
             sass: 'sass',
             utils: 'utils',
             reducers: 'reducers',
-            constants: 'constants'
+            constants: 'constants',
+            apiServices: 'apiServices'
         }
     },
 

@@ -88,9 +88,12 @@ module.exports = {
             'react-native': 'react-native-web',
             components: 'components',
             containers: 'containers',
+            actions: 'actions',
             sass: 'sass',
             utils: 'utils',
-            reducers: 'reducers'
+            reducers: 'reducers',
+            constants: 'constants',
+            apiServices: 'apiServices'
         }
     },
 
@@ -156,7 +159,7 @@ module.exports = {
             },
             {
                 test: /\.sass$/,
-                loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[path][local]__[hash:base64:5]!postcss-loader!sass!sass-resources')
+                loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[local]__[hash:base64:5]!postcss-loader!sass!sass-resources')
             },
             // JSON is not enabled by default in Webpack but both Node and Browserify
             // allow it implicitly so we also enable it.

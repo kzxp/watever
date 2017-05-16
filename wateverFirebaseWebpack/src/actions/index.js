@@ -16,5 +16,17 @@ export default {
   ),
   uiLoaded: createAction(
     constants.UI_LOADED
-  )
+  ),
+  loginIn: createAction (
+    constants.LOGGING_IN
+  ),
+  loginOut: createAction (
+    constants.LOGGING_OUT
+  ),
+  loggedIn: createAction (
+    constants.LOGGED_IN
+  ),
+  loggedOut: createAction (
+    constants.LOGGED_OUT
+  ),
 }

@@ -6,7 +6,7 @@ import { includeRoutes, excludeRoutes } from './routes'
 import { syncHistoryWithStore } from 'react-router-redux';
 import configureStore from './store';
 import App from 'containers/App'
-import { firebaseInit, getDatabase } from './firebase';
+import init from './init';
 import actions from 'actions';
 
 /* eslint import/no-webpack-loader-syntax: "off" */
@@ -44,14 +44,7 @@ const renderDOM = () => {
     );
 }
 
-const firebase = firebaseInit();
-
-firebase
-.database()
-.ref("/page")
-.once("value")
-.then( (snapshot) => 
-    { store.dispatch( actions.fetchPageData(snapshot.val())) 
-});
+init.firebaseInit();
+store.dispatch(actions.fetchPageData()) 
 
 renderDOM();
